@@ -1,0 +1,15 @@
+name: CI Pipeline
+
+on:
+  push:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Execute CI Script
+        run: echo "CI Pipeline Executed Successfully"
